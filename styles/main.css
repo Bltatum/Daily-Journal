@@ -17,3 +17,16 @@ h1 {
     text-align: center;
     text-decoration: underline;
 }
+.journal {
+    background-color: silver;
+    border-radius: 5%;
+    font-family: sans-serif;
+    border-radius: 20%;
+
+   
+}
+.journal:hover {
+    background-color: whitesmoke;
+  }
+  
+
