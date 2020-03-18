@@ -28,5 +28,9 @@ h1 {
 .journal:hover {
     background-color: whitesmoke;
   }
+
+  .date__concept {
+      text-decoration: underline;
+  }
   
 

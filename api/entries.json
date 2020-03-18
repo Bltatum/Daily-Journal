@@ -1,10 +1,18 @@
-{"entries": [
-    {   
-       "id": 1,
-       "concept": "HTML & CSS",
-       "date": "07/24/2025",
-        "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        "mood": "Ok"
+{
+  "entries": [
+    {
+      "id": 1,
+      "concept": "Start of the API",
+      "date": "03-18-20",
+      "entry": "first",
+      "mood": "happy"
+    },
+    {
+      "date": "2020-03-18",
+      "concept": "testing",
+      "entry": "test test test",
+      "mood": "Happy",
+      "id": 2
     }
-]
+  ]
 }
