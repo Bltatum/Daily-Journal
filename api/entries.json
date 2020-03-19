@@ -13,6 +13,13 @@
       "entry": "test test test",
       "mood": "Happy",
       "id": 2
+    },
+    {
+      "date": "2020-03-19",
+      "concept": "test",
+      "entry": "making sure my api is working.",
+      "mood": "Happy",
+      "id": 3
     }
   ]
 }
