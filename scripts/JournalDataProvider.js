@@ -3,7 +3,7 @@
 
 let entries = []
 
-fetch(' http://localhost:3000/entries') // Fetch from the API
+fetch('http://localhost:3000/entries') // Fetch from the API
 .then(response => response.json())  // Parse as JSON
 .then(parsedEntries => {
     entries = parsedEntries
