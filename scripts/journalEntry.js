@@ -5,8 +5,8 @@
 export const JournalEntryComponent = (entry) => {
     return `
         <div id="entry--${entry.id}">
-         <ul>
-          <li> ${entry.concept}</li>
+          <p class="date__concept">${entry.date} - ${entry.concept}</p>
+          <ul>  
            <li> ${entry.entry}</li>
          </ul>
         </div>
