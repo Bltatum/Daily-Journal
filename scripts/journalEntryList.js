@@ -1,26 +1,31 @@
 
-const eventHub =document.querySelector(".container")
 
-/*
- *  Purpose:
- *    To render as many journal entry components as
- *    there are items in the collection exposed by the
- *    data provider component
- */
-import { useEntries, getEntries } from "./JournalDataProvider.js"
+// DOM reference to where all entries will be rendered
+import { useEntries, getEntries, deleteEntry } from "./JournalDataProvider.js"
 import { JournalEntryComponent } from "./JournalEntry.js"
+
+const contentTarget = document.querySelector(".entryLog")
+const eventHub =document.querySelector(".container")
 
 eventHub.addEventListener("entryStateChanged", e =>{
     render()
 })
+//deleting note E.V.
+contentTarget.addEventListener("click", e =>{
+    if(e.target.id.startsWith("deleteEntry--")){
+        const [pefix, entryId] = e.target.id.split("--")
+        deleteEntry(entryId)
+    }
+  })
 
-// DOM reference to where all entries will be rendered
-const contentTarget = document.querySelector(".entryLog")
+
 
 const render = () =>{
     getEntries().then(()=>{
+        
         const allTheEntries = useEntries()
-            contentTarget.innerHTML = allTheEntries.map(
+            
+        contentTarget.innerHTML = allTheEntries.map(
                 currentEntryObject => {
                     return JournalEntryComponent(currentEntryObject)
                 }

@@ -1,39 +1,18 @@
 {
   "entries": [
     {
-      "id": 1,
-      "concept": "Start of the API",
-      "date": "03-18-20",
-      "entry": "first",
-      "mood": "happy"
-    },
-    {
-      "date": "2020-03-18",
-      "concept": "testing",
-      "entry": "test test test",
-      "mood": "Happy",
+      "date": "2020-03-24",
+      "concept": "deleting notes",
+      "entry": "deleting notes",
+      "mood": "Good",
       "id": 2
     },
     {
-      "date": "2020-03-19",
-      "concept": "test",
-      "entry": "making sure my api is working.",
-      "mood": "Happy",
-      "id": 3
-    },
-    {
-      "date": "2020-03-19",
-      "concept": "pbue",
-      "entry": "io",
-      "mood": "Happy",
+      "date": "2020-03-24",
+      "concept": "Love",
+      "entry": "I love Emily!",
+      "mood": "Excited",
       "id": 4
-    },
-    {
-      "date": "2020-03-19",
-      "concept": "qethqeh",
-      "entry": "aehrqehq",
-      "mood": "Mad",
-      "id": 5
     }
   ]
 }

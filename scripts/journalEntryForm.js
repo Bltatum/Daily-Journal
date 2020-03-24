@@ -27,7 +27,7 @@ eventHub.addEventListener("click", e => {
    return `
     
     <form action="">
-        <fieldset>
+        <fieldset class="entryDataForm">
             <label for="journalDate">Date of Entry</label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
@@ -41,17 +41,20 @@ eventHub.addEventListener("click", e => {
     <form action="">
         <fieldset>
             <label for="journalEntry">Journal Entry</label>
-            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
+            <textarea name="journalEntry" id="journalEntry" cols="50" rows="5"></textarea>
         </fieldset>
     </form>
     <form action="">
         <fieldset>
             <label for="mood">Mood for the day</label>
             <select name="mood" id="mood">
-                <option value="Happy">Happy</option>
+                <option value="Good">Good</option>
                 <option value="Sad">Sad</option>
                 <option value="Mad">Mad</option>
                 <option value="Tired">Tired</option>
+                <option value="Frustrated">Frustrated</option>
+                <option value="Irritated">Irritated</option>
+                <option value="Excited">Excited</option>
             </select>
         </fieldset>
     </form> 
