@@ -17,6 +17,14 @@ export const getEntries = () => {
     // What should happen when we finally have the array?
 })
 }
+//deleting notes
+export const deleteEntry = entryId => {
+    return fetch(`http://localhost:3000/entries/${entryId}`, {
+        method: "DELETE"
+    })
+        .then(getEntries)
+        .then(dispatchStateChangeEvent)
+}
 
 export const saveEntries = entry => {
     return fetch('http://localhost:3000/entries', {
