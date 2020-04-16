@@ -1,30 +1,27 @@
-import { saveEntries } from "./JournalDataProvider.js"
+import { saveEntries } from "./JournalDataProvider.js";
 
-const eventHub = document.querySelector(".container")
-const contentTarget = document.querySelector(".journalEntry")
+const eventHub = document.querySelector(".container");
+const contentTarget = document.querySelector(".journalEntry");
 
-eventHub.addEventListener("click", e => {
-    if(e.target.id ==="submit") {
-        const entryDate = document.querySelector("#journalDate").value
-        const entryConcepts = document.querySelector("#concepts").value
-        const entryText = document.querySelector("#journalEntry").value
-        const entryMood = document.querySelector("#mood").value
+eventHub.addEventListener("click", (e) => {
+  if (e.target.id === "submit") {
+    const entryDate = document.querySelector("#journalDate").value;
+    const entryConcepts = document.querySelector("#concepts").value;
+    const entryText = document.querySelector("#journalEntry").value;
+    const entryMood = document.querySelector("#mood").value;
 
-        const newEntry = {
-            date: entryDate,
-            concept: entryConcepts,
-            entry: entryText,
-            mood: entryMood
-        }
-        saveEntries(newEntry)
-    }
-})
+    const newEntry = {
+      date: entryDate,
+      concept: entryConcepts,
+      entry: entryText,
+      mood: entryMood,
+    };
+    saveEntries(newEntry);
+  }
+});
 
-
-
-  
-  const journalForm= () => {
-   return `
+const journalForm = () => {
+  return `
     
     <form action="">
         <fieldset class="entryDataForm">
@@ -61,9 +58,9 @@ eventHub.addEventListener("click", e => {
     <section class="button">
        <button id="submit" type="submit">Record Journal Entry</button>    
     </section>
-    `
-}
+    `;
+};
 export const journalFormComponent = () => {
-  const journalFormHTML = journalForm()
-    contentTarget.innerHTML = journalFormHTML
-}
+  const journalFormHTML = journalForm();
+  contentTarget.innerHTML = journalFormHTML;
+};

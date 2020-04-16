@@ -3,7 +3,7 @@
  *           HTML representation of the data
  */
 export const JournalEntryComponent = (entry) => {
-    return `
+  return `
     <section  class="entry">
         <article id="entry--${entry.id}">
           <p class="date__concept">${entry.date}</p>
@@ -12,6 +12,5 @@ export const JournalEntryComponent = (entry) => {
           <p>Mood: ${entry.mood}</p>
         <button class="deleteButton" id="deleteEntry--${entry.id}">Delete</button>
       </article>
-    </section> `
-}
-
+    </section> `;
+};
